@@ -26,6 +26,7 @@ projeto/
 ├── requirements.txt
 ├── README.md
 └── errors.txt
+```
 🚀 Instalação e Requisitos
 Pré-requisitos
 Python 3 instalado.
