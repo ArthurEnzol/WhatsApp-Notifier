@@ -34,7 +34,7 @@ projeto/
 ## Instalação
 
 ### 1. Clonar ou baixar o projeto
-```bash
+
 git clone <url-do-repositorio>
 cd projeto
 
