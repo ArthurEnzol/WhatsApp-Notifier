@@ -27,17 +27,17 @@ projeto/
 ├── README.md
 └── errors.txt
 ```
-🚀 Instalação e Requisitos
-Pré-requisitos
-Python 3 instalado.
+## 🚀 Instalação e Requisitos
 
-Google Chrome instalado.
+### Pré-requisitos
+* Python 3 instalado.
+* Google Chrome instalado.
 
-Passo a Passo
-Instale as dependências:
-
-Bash
+### Passo a Passo
+1. Instale as dependências:
+```bash
 pip install -r requirements.txt
+
 📊 Formato da Planilha (clientes.xlsx)
 A planilha deve ter as colunas: Nome, Telefone (ex: 5511999999999) e Data de Vencimento.
 
