@@ -37,22 +37,23 @@ projeto/
 1. Instale as dependências:
 ```bash
 pip install -r requirements.txt
+```
 
-📊 Formato da Planilha (clientes.xlsx)
-A planilha deve ter as colunas: Nome, Telefone (ex: 5511999999999) e Data de Vencimento.
+## 📊 Formato da Planilha (clientes.xlsx)
+**A planilha deve ter as colunas: Nome, Telefone (ex: 5511999999999) e Data de Vencimento.**
 
-⚙️ Como Usar
-Execute o script: python main.py
+### ⚙️ Como Usar
+Execute o script: ```python main.py```
 
-O navegador abrirá no WhatsApp Web.
+*O navegador abrirá no WhatsApp Web.*
 
 Você terá 90 segundos para escanear o QR Code.
 
 O sistema iniciará o envio automaticamente após esse tempo.
 
-⚠️ Observações Importantes
-Não minimize o navegador durante a execução, pois o PyAutoGUI usa a tela.
+## ⚠️ Observações Importantes
+**Não minimize o navegador durante a execução, pois o PyAutoGUI usa a tela.**
 
-Falhas de envio serão registradas no arquivo errors.txt.
+**Falhas de envio serão registradas no arquivo errors.txt.**
 
-Este projeto tem fins educacionais. Use com moderação.
+**Este projeto tem fins educacionais. Use com moderação.**
