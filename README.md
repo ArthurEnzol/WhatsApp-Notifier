@@ -1,116 +1,57 @@
-# Envio Automático de Mensagens no WhatsApp
+# WhatsApp Automation System
 
-Projeto em Python para envio automático de mensagens personalizadas via **WhatsApp Web**, utilizando uma planilha do Excel como base de dados.
+Sistema em Python para envio automatizado de mensagens via WhatsApp Web, utilizando dados de planilhas Excel.
 
-Indicado para:
-- Avisos de vencimento
-- Lembretes
-- Mensagens em massa personalizadas
+## 📋 Sobre o Projeto
 
----
-
-## Tecnologias Utilizadas
-
-- Python 3
-- Selenium (automação do navegador)
-- PyAutoGUI (automação de cliques)
-- OpenPyXL (leitura de arquivos Excel)
-- WhatsApp Web
+O sistema automatiza a comunicação de avisos e lembretes. Ele lê o nome, o telefone e a data de vencimento diretamente de um arquivo `.xlsx` e realiza o envio personalizado.
 
 ---
 
-## Estrutura do Projeto
+## 🛠️ Tecnologias Utilizadas
 
+* **Python 3.x**
+* **Selenium:** Automação do navegador.
+* **PyAutoGUI:** Automação de cliques e interface.
+* **OpenPyXL:** Leitura de arquivos Excel.
+
+---
+
+## 📂 Estrutura do Projeto
+
+```text
 projeto/
 ├── main.py
 ├── clientes.xlsx
 ├── requirements.txt
 ├── README.md
 └── errors.txt
+🚀 Instalação e Requisitos
+Pré-requisitos
+Python 3 instalado.
 
+Google Chrome instalado.
 
----
+Passo a Passo
+Instale as dependências:
 
-## Instalação
-
-### 1. Clonar ou baixar o projeto
-
-git clone <url-do-repositorio>
-cd projeto
-
-2. Instalar as dependências
+Bash
 pip install -r requirements.txt
+📊 Formato da Planilha (clientes.xlsx)
+A planilha deve ter as colunas: Nome, Telefone (ex: 5511999999999) e Data de Vencimento.
 
-3. Requisitos
+⚙️ Como Usar
+Execute o script: python main.py
 
-Python 3 instalado
+O navegador abrirá no WhatsApp Web.
 
-Google Chrome instalado
+Você terá 90 segundos para escanear o QR Code.
 
-Conta ativa no WhatsApp
+O sistema iniciará o envio automaticamente após esse tempo.
 
-Conexão com a internet
+⚠️ Observações Importantes
+Não minimize o navegador durante a execução, pois o PyAutoGUI usa a tela.
 
-Formato do Arquivo Excel (clientes.xlsx)
+Falhas de envio serão registradas no arquivo errors.txt.
 
-A planilha deve conter a aba Sheet1 com a seguinte estrutura:
-
-Nome	Telefone	Data de Vencimento
-João	5511999999999	2026-01-25
-Maria	5511988888888	2026-02-10
-
-Observações:
-
-O telefone deve conter código do país + DDD
-
-A data deve estar no formato de data do Excel
-
-Como Usar
-
-Execute o script:
-
-python main.py
-
-
-O navegador será aberto no WhatsApp Web
-
-Aguarde o tempo indicado para escanear o QR Code
-
-As mensagens serão enviadas automaticamente para os contatos da planilha
-
-Mensagem padrão enviada:
-
-Olá João seu boleto vence dia: 25/01/2026.
-
-Tratamento de Erros
-
-Caso uma mensagem não seja enviada:
-
-O número será registrado no arquivo errors.txt
-
-O programa continuará a execução normalmente
-
-Observações Importantes
-
-O PyAutoGUI depende da resolução da tela
-
-As coordenadas de clique podem precisar de ajuste
-
-Não minimize o navegador durante a execução
-
-O WhatsApp pode limitar envios em massa
-
-Possíveis Melhorias
-
-Remover dependência do PyAutoGUI
-
-Adicionar envio de anexos
-
-Criar interface gráfica
-
-Melhorar sistema de logs
-
-Aviso Legal
-
-Este projeto tem finalidade educacional.
-O uso inadequado pode violar os termos de uso do WhatsApp.
+Este projeto tem fins educacionais. Use com moderação.
